@@ -6,6 +6,12 @@ buildscript {
             url = "https://gregtech.overminddl1.com/"
         }
         maven {
+            // GTNH ForgeGradle Fork
+            // https://github.com/GTNewHorizons/ExampleMod1.7.10
+            name = "GTNH Maven"
+            url = "http://jenkins.usrv.eu:8081/nexus/content/groups/public/"
+        }
+        maven {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }
@@ -15,7 +21,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "com.github.GTNH2:ForgeGradle:FG_1.2-SNAPSHOT"
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2.11'
     }
 }
 
